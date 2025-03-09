@@ -1,0 +1,81 @@
+.projects {
+    background-color: white;
+   margin-top: -28px;
+   padding: 30px ;
+}
+
+.projects h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    color: #333;
+    margin-left: 20px;
+    padding: 20px;
+}
+.project-container {
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    margin-top: 20px;
+}
+.project-card {
+    background-color: #333;
+    color: white;
+    width: 250px;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+.project-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+.project-card p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+.project-card .fishmarket{
+    margin-top: 130px;
+}
+.see-more {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    
+}
+
+.see-more:hover {
+    background-color: black;
+}
+.project-card:hover {
+    background-color: black;
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    
+}
+
+@media (max-width: 425px) {
+    .project-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .project-card {
+        width: 100%;
+    }
+
+    .projects{
+        padding: 0px 10px 0px 10px;
+    }
+    
+}

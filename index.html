@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Kavindu Avishka</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/CSS/index.css">
+    <link rel="stylesheet" href="/CSS/hero-section.css">
+    <link rel="stylesheet" href="/CSS/about-section.css">
+    <link rel="stylesheet" href="/CSS/skill-section.css">
+    <link rel="stylesheet" href="/CSS/project-section.css">
+    <link rel="stylesheet" href="/CSS/hire-section.css">
+    <link rel="stylesheet" href="/CSS/contact-section.css">
+    
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">AVISHKA</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Project</a></li>
+                <li><a href="#hire">Hire Me</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </nav>
+    </header>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1><span>Kavindu</span> Avishka</h1>
+            <h2>Full Stack Developer & Designer</h2>
+            <a href="#" class="btn">Download CV</a>
+        </div>
+        <div class="hero-image">
+            <img src="/assets/image/profile2.jpeg" alt="profile" class="profile">
+        </div>
+    </section>
+    <section id="about" class="about">
+        <h2 class="about-title">About me</h2>
+        <p class="about-text">
+            I am a passionate Software Engineering undergraduate dedicated to building innovative and efficient solutions. I specialize in using the most up-to-date technologies and tools to create impactful applications. With a strong foundation in programming and a constant drive to learn, I am focused on contributing to projects that push boundaries and deliver exceptional results.
+        </p>
+      <a href="#contact" class="button">Hire Me</a>
+    </section>
+    <section id="skills" class="skills">
+        <h2 class="skills-title">Skills</h2>
+        <div class="skills-container">
+            <div class="skill"><span>HTML5</span><div class="progress"><div class="progress-bar html"></div></div></div>
+            <div class="skill"><span>NodeJS</span><div class="progress"><div class="progress-bar node"></div></div></div>
+            <div class="skill"><span>MySQL</span><div class="progress"><div class="progress-bar mysql"></div></div></div>
+            <div class="skill"><span>GitHub</span><div class="progress"><div class="progress-bar github"></div></div></div>
+            <div class="skill"><span>Java</span><div class="progress"><div class="progress-bar java"></div></div></div>
+            <div class="skill"><span>CSS3</span><div class="progress"><div class="progress-bar css"></div></div></div>
+            <div class="skill"><span>JavaScript</span><div class="progress"><div class="progress-bar js"></div></div></div>
+            <div class="skill"><span>Python</span><div class="progress"><div class="progress-bar python"></div></div></div>
+        </div>
+    </section>
+    <section id="projects">
+       
+        <div class="projects">
+            <h2>Projects</h2>
+            <div class="project-container">
+                <div class="project-card">
+                    <img src="/assets/image/baitnbite.png" alt="Fish Market & Boat Management System">
+                    <p class="fishmarket">Fish Market & Boat Management System</p>
+                </div>
+                <div class="project-card">
+                    <img src="/assets/image/tictactoe.png" alt="Tic-Tac-Toe game With AI">
+                    <p>Tic-Tac-Toe game With AI</p>
+                </div>
+            </div>
+            <button class="see-more">See More</button>
+        </div>
+    </section>
+    <section id="hire">
+        <h2>Hire Me</h2>
+
+        <div class="services">
+            <button class="service-btn">Website Development</button>
+            <button class="service-btn">Backend Development</button>
+            <button class="service-btn">Android Development</button>
+            <button class="service-btn">IOS Development</button>
+        </div>
+    
+        <div class="form-container">
+            <form>
+                <input type="text" placeholder="First Name" required>
+                <input type="text" placeholder="Last Name" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Project Details (Optional)"></textarea>
+    
+                <div class="checkbox-container">
+                    <input type="checkbox" required>
+                    <label>I agree to the processing of my data in accordance with the privacy policy</label>
+                </div>
+    
+                <button class="hire-btn">Hire Me</button>
+            </form>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <div class="contact-container">
+            <div class="contact-info">
+                <div>
+                    <img src="/assets/image/email.png" alt="Email">
+                    <span>avishka@gmail.com</span>
+                </div>
+                <div>
+                    <img src="/assets/image/call.png" alt="Phone">
+                    <span>0779090900</span>
+                </div>
+            </div>
+    
+            <button class="contact-button">Get In Touch</button>
+    
+            <div class="social-icons">
+                <img src="/assets/image/linkedin.png" alt="LinkedIn">
+                <img src="/assets/image/fb.png" alt="Facebook">
+                <img src="/assets/image/insta.png" alt="Instagram">
+            </div>
+        </div>
+    </section>
+    <script>
+        document.querySelector('.burger').addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.toggle('nav-active');
+        });
+    </script>
+</body>
+</html>
